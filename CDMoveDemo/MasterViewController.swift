@@ -20,15 +20,18 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+        let plusSymbol = UIImage(systemName: "plus.app")
+        let addButton = UIBarButtonItem(image: plusSymbol, style: .done, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        let copyButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(copyPersistentStore(_:)))
-        let restoreButton = UIBarButtonItem(barButtonSystemItem: .rewind, target: self, action: #selector(restorePersistentStore(_:)))
+        let backupButton = UIImage(systemName: "square.and.arrow.down.on.square")
+        let copyButton = UIBarButtonItem(image: backupButton, style: .plain, target: self, action: #selector(copyPersistentStore(_:)))
+        let restoreSymbol = UIImage(systemName: "arrow.up.bin")
+        let restoreButton = UIBarButtonItem(image: restoreSymbol, style: .plain, target: self, action: #selector(restorePersistentStore(_:)))
         navigationItem.leftBarButtonItems = [copyButton, restoreButton]
         
     }
