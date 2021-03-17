@@ -109,6 +109,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
         // Save the context.
         do {
+            try self.fetchedResultsController.managedObjectContext.obtainPermanentIDs(for: [newEvent])
             try context.save()
         } catch {
             // Replace this implementation with code to handle the error appropriately.
