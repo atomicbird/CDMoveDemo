@@ -55,6 +55,7 @@
 		EEB98658246B1B8900CF5A00 /* CDMoveDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMoveDemoUITests.swift; sourceTree = "<group>"; };
 		EEB9865A246B1B8900CF5A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB98666246B44B600CF5A00 /* NSPersistentContainer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+extension.swift"; sourceTree = "<group>"; };
+		EEC81115260954CC009BE293 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 				EEB98636246B1B8500CF5A00 /* SceneDelegate.swift */,
 				EEB98638246B1B8500CF5A00 /* MasterViewController.swift */,
 				EEB98666246B44B600CF5A00 /* NSPersistentContainer+extension.swift */,
+				EEC81115260954CC009BE293 /* README.md */,
 				EEB9863A246B1B8500CF5A00 /* DetailViewController.swift */,
 				EEB9863C246B1B8500CF5A00 /* Main.storyboard */,
 				EEB9863F246B1B8900CF5A00 /* Assets.xcassets */,
