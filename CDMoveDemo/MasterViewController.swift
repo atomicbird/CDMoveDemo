@@ -49,19 +49,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     
     @objc
     func restorePersistentStore(_ sender: Any) {
-//        if let tokenData = UserDefaults.standard.data(forKey: "token") {
-//            do {
-//                let token = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [NSQueryGenerationToken.self], from: tokenData) as! NSQueryGenerationToken
-//                try self.managedObjectContext!.setQueryGenerationFrom(token)
-//                _fetchedResultsController = nil
-//                tableView.reloadData()
-//            } catch {
-//                print("Eror decoding token: \(error)")
-//            }
-//
-//        }
-//        return
-        
         guard let container = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
             else {
                 return
@@ -77,15 +64,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     
     @objc
     func copyPersistentStore(_ sender: Any) {
-//        let token = NSQueryGenerationToken.current // self.managedObjectContext!.queryGenerationToken!
-//        do {
-//            let tokenData = try NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true)
-//            UserDefaults.standard.set(tokenData, forKey: "token")
-//        } catch {
-//            print("Error encoding token: \(error)")
-//        }
-//        return
-        
         guard let container = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
             else {
             return
@@ -249,15 +227,5 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
     }
-
-    /*
-     // Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed.
-     
-     func controllerDidChangeContent(controller: NSFetchedResultsController) {
-         // In the simplest, most efficient, case, reload the table view.
-         tableView.reloadData()
-     }
-     */
-
 }
 
