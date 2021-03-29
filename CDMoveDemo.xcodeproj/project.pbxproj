@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE659D2C2612357000808052 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE659D2B2612356F00808052 /* README.md */; };
+		EE659D312612358D00808052 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE659D302612358D00808052 /* LICENSE.txt */; };
 		EEB98632246B1B8500CF5A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB98631246B1B8500CF5A00 /* AppDelegate.swift */; };
 		EEB98635246B1B8500CF5A00 /* CDMoveDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEB98633246B1B8500CF5A00 /* CDMoveDemo.xcdatamodeld */; };
 		EEB98637246B1B8500CF5A00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB98636246B1B8500CF5A00 /* SceneDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE659D2B2612356F00808052 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EE659D302612358D00808052 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		EEB9862E246B1B8500CF5A00 /* CDMoveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDMoveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB98631246B1B8500CF5A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEB98634246B1B8500CF5A00 /* CDMoveDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDMoveDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -55,7 +59,6 @@
 		EEB98658246B1B8900CF5A00 /* CDMoveDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMoveDemoUITests.swift; sourceTree = "<group>"; };
 		EEB9865A246B1B8900CF5A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB98666246B44B600CF5A00 /* NSPersistentContainer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+extension.swift"; sourceTree = "<group>"; };
-		EEC81115260954CC009BE293 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		EEB98625246B1B8500CF5A00 = {
 			isa = PBXGroup;
 			children = (
+				EE659D2B2612356F00808052 /* README.md */,
+				EE659D302612358D00808052 /* LICENSE.txt */,
 				EEB98630246B1B8500CF5A00 /* CDMoveDemo */,
 				EEB9864C246B1B8900CF5A00 /* CDMoveDemoTests */,
 				EEB98657246B1B8900CF5A00 /* CDMoveDemoUITests */,
@@ -110,7 +115,6 @@
 				EEB98636246B1B8500CF5A00 /* SceneDelegate.swift */,
 				EEB98638246B1B8500CF5A00 /* MainViewController.swift */,
 				EEB98666246B44B600CF5A00 /* NSPersistentContainer+extension.swift */,
-				EEC81115260954CC009BE293 /* README.md */,
 				EEB9863A246B1B8500CF5A00 /* DetailViewController.swift */,
 				EEB9863C246B1B8500CF5A00 /* Main.storyboard */,
 				EEB9863F246B1B8900CF5A00 /* Assets.xcassets */,
@@ -245,6 +249,8 @@
 			files = (
 				EEB98643246B1B8900CF5A00 /* LaunchScreen.storyboard in Resources */,
 				EEB98640246B1B8900CF5A00 /* Assets.xcassets in Resources */,
+				EE659D2C2612357000808052 /* README.md in Resources */,
+				EE659D312612358D00808052 /* LICENSE.txt in Resources */,
 				EEB9863E246B1B8500CF5A00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
